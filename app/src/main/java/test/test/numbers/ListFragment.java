@@ -32,7 +32,7 @@ public class ListFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_table, container, false);
         List<String> numbers = new ArrayList<>();
-        for (int i = 1; i<101;i++){numbers.add(String.valueOf(i));}
+        for (int i = 1; i<1001;i++){numbers.add(String.valueOf(i));}
         RecyclerView view = (RecyclerView) rootView.findViewById(R.id.item_container);
         view.setLayoutManager(new GridLayoutManager(getContext(), COLUMN_COUNT));
         adapter = new NumbersAdapter(numbers,new View.OnClickListener() {
